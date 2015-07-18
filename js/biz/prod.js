@@ -11,7 +11,7 @@ wineApp.prod = function() {
                 	htmla.append(html);
                 	pageList.append(htmla);
                 } else {
-                	htmlb.append(html);
+                	htmlb.append(html); 
                 	pageList.append(htmlb);
                 }
             });
