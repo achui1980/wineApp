@@ -1,0 +1,25 @@
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+body{ font-family: Arial, Helvetica, sans-serif, "微软雅黑"; font-size:18px;}
+*{ margin:0; padding:0;}
+a{ text-decoration:none; color:#fff;}
+li{ list-style:none;}
+a img{ border:none;}
+h1{ float:left; width:94%; background:url(images/title1.jpg) repeat-x; height:40px; line-height:40px; font-size:20px; color:#fff; padding:0 3%; font-weight:400;}
+h1 a{ float:right; color:#fff; font-size:16px;}
+.header{ height:42px; margin:10px;}
+.search input{ float:left; width:80%; padding:10px; border:1px #ddd solid; border-radius:5px; color:#999; font-family: Arial; font-size:16px;}
+.search a img{ position:absolute; margin:10px 0 0 -35px;}
+.more a img{ float:right; width:35px; margin-top:5px}
+.img100 img{ width:100%;}
+.dr{ display:table; margin-bottom:10px; width:100%;}
+.dr li{float:left; width:50%;}
+.dr li img{ width:100%;}
+.dr img{ width:100%;}
+.dr li a{ display:block; width:70%; margin:0 auto; background-color:#a85293; padding:6px 0 7px 0; border-radius:5px; text-align:center;}
+.jz ul{ float:left; margin:0 3%; width:94%;}
+.jz ul li{ margin:5px 0;}
+.jz li img{ width:100%;}

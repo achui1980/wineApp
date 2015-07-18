@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery Mobile Demos</title>
+    <script src="http://lib.sinaapp.com/js/jquery/1.9.1/jquery-1.9.1.min.js"></script>
+    <script src="js/app/config.js"></script>
+    <script src="js/app/ajax.js"></script>
+    <script type="text/javascript">
+    $.ajax({
+            url: 'http://localhost:8080/wineApp/demo/test.json',
+            type: 'GET',
+            data: {
+                param1: 'value1'
+            }
+        })
+        .done(function() {
+            console.log("success");
+        })
+        .fail(function(e,t) {
+            console.log(e);
+            console.log(t);
+        })
+        .always(function() {
+            console.log("complete");
+        });
+    </script>
+</head>
+
+<body>
+</body>
