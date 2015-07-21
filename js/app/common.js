@@ -1,6 +1,4 @@
 var wineApp = wineApp || {};
-<<<<<<< HEAD
-
 wineApp.common = (function() {
     var buildLayout2Col = function(wrapperSelector, list, itemParse) {
         var wrapper = $('#' + wrapperSelector);
@@ -18,6 +16,11 @@ wineApp.common = (function() {
             }
         });
     }
+    /**
+     * 为每个页面添加footer
+     * TODO：要考虑一下链接动态生成的问题
+     * @return {[type]} [description]
+     */
     var buildFooter = function(){
         var footer = $('<div>',{
             "data-role" : "footer",
@@ -38,7 +41,11 @@ wineApp.common = (function() {
         $('[data-role="page"]').append(footer).trigger('create');
     }
 
-    //默认为header加回退按钮和菜单
+   
+   /**
+    * [ 默认为header加回退按钮和菜单]
+    * @return {[type]} [description]
+    */
     var initBackBtnAndMenu = function(){
         var header = $('[data-role="header"]')
             .append(' <a href="#" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>')
@@ -57,5 +64,3 @@ $(document).bind("pagecreate",function(){
     wineApp.common.buildFooter();
     wineApp.common.buildHeader();
 });
-=======
->>>>>>> origin/master
