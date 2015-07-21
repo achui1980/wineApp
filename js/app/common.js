@@ -1,4 +1,5 @@
 var wineApp = wineApp || {};
+<<<<<<< HEAD
 
 wineApp.common = (function() {
     var buildLayout2Col = function(wrapperSelector, list, itemParse) {
@@ -56,3 +57,5 @@ $(document).bind("pagecreate",function(){
     wineApp.common.buildFooter();
     wineApp.common.buildHeader();
 });
+=======
+>>>>>>> origin/master
