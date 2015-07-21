@@ -1,22 +1,15 @@
 var wineApp = wineApp || {}
 wineApp.prod = function() {
-    var initProdList = function() {
-        wineApp.ajax.post('demo/test.json', {}, function(data) {
-            var pageList = $('#prod-list');
-            $.each(data.owl, function(index, val) {
-                var htmla = $('<div class="ui-block-a"><div>');
-                var htmlb = $('<div class="ui-block-b"><div>');
-                var html = '<div class="ui-bar ui-bar-a">'+val.item+'</div>';
-                if (index % 2 == 0) {
-                	htmla.append(html);
-                	pageList.append(htmla);
-                } else {
-                	htmlb.append(html); 
-                	pageList.append(htmlb);
-                }
-            });
 
-        })
+    var initProdList = function() {
+    var param = $.url('?name');
+    console.log(param);
+        wineApp.ajax.post('demo/test.json', {}, onSuccess);
+    }
+    var onSuccess = function(data) {
+        wineApp.common.buildLayout2Col('prod-list', data.owl, function(val) {
+            return val.item;
+        });
     }
     return {
         initProdList: initProdList

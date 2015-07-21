@@ -9,31 +9,17 @@
     <link rel="stylesheet" href="../css/css.css">
     <script src="../js/vendors/jquery.js"></script>
     <script src="../js/vendors/jquery.mobile-1.4.5.min.js"></script>
-    <script src="../js/vendors/url.js"></script>
     <script src="../js/app/config.js"></script>
     <script src="../js/app/common.js"></script>
     <script src="../js/app/ajax.js"></script>
-    <script src="../js/biz/prod.js"></script>
-    <script type="text/javascript">
-    $(document).on('pagecreate',function(){
-        console.log('pagecreate');
-    })
-    $(document).on('pagebeforecreate',function(){
-        console.log('pagebeforecreate');
-    })
-    $(document).on('pageinit',function(){
-        console.log('pageinit');
-    })
-    </script>
+    <script src="../js/biz/daren.js"></script>
 </head>
 <body>
-    <div data-role="page" id="prod-list-page">
+    <div data-role="page" id="prod-list-daren">
         <div data-role="header">
-            <h2 id="page-title">产品列表</h2>
+            <h2 id="page-title">达人极客</h2>
             <a href="#" data-rel="back" class="ui-btn ui-btn-left ui-alt-icon ui-nodisc-icon ui-corner-all ui-btn-icon-notext ui-icon-carat-l">Back</a>
         </div>
-        <div id="prod-list" class="ui-grid-a">
-            
-        </div>
+        <div id="daren-list" class="ui-grid-a"></div>
     </div>
 </body>
